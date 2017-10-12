@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="SaloonCss.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" src="Script/Jquery.circle.js"></script>
+</head>
+<script>
+$(document).ready(function() {
+	$('#slideShow').cycle({
+	fx: 'fade',
+	pager: '#smallnav',
+	pause:   1,
+	speed: 1800,
+	timeout:  3500
+	});
+});
+</script>
+<body>
+<nav>
+	<ul>
+		<li><a href=""><b>HOME</b></a></li>
+		<li><a href="">ABOUT &#9661</a>
+			<ul >
+				<li><a href="">Welcome</a></li>
+				<li><a href="">General Info</a></li>
+			</ul>
+		</li>
+		<li><a href="">SERVICES</a></li>
+		<li><a href="">CONTACT</a></li>
+	</ul>
+</nav>
+<div id = "slideShow">
+	<img src="/images/braid-1final.png" class="bkimg">
+	<img src="/images/braid-3final.png" class="bkimg">
+	<img src="/images/ex_4final.png" class="bkimg">
+	<img src="/images/ex_1final.png" class="bkimg">
+	<img src="/images/ex_3final.png" class="bkimg">
+</div>
+<div class ="businessLabel">
+  <img src="/images/Saloon_logo.png">
+</div>
+</body>
+</html>
